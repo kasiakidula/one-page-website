@@ -1,0 +1,445 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2019-12-12, 11:31:04
+    Author     : Kasia
+*/
+html, body {
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: rgb(28,28,28);
+}
+h1, h2{
+    margin: 0;
+    padding: 0;
+}
+/* COMMON VALUE */
+.center_section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+.section_header{
+    text-align: center;
+    font-size: 2.5em;
+}
+.section_description{
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 5px;
+}
+/* ------------------- */
+
+/* MENU */
+#con_menu{
+    width: 100%;
+    overflow: auto;
+}
+.sticky_menu{
+    position: fixed;
+    background-color: rgb(255,255,255);
+    box-shadow: 0 0 10px rgb(28,28,28);
+    z-index: 101;
+    transition: .5s;
+}
+.menu_top{
+    width: 56%;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.menu_bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+.links{
+    width: 550px;
+    margin: 0 auto;
+    padding: 36px 0;
+    font-size: 1.2em;
+    list-style: none;
+    display: flex;
+}
+.links_bar{
+    margin: 0;
+    padding: 22px 0;
+    font-size: 1em;
+}
+.links li{
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.links li a{
+    text-decoration: none;
+    color: rgb(28,28,28);
+}
+.links li a:hover{
+    text-decoration: underline;
+}
+#icons{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 0 auto;
+}
+.menu_icon{
+    display: none;
+}
+.img_logo{
+    width: 80px;
+    height: 91px;
+    display: flex;
+    margin-right: 20px;
+}
+.logo_bar{
+    width: 50px;
+    height: 55px;
+    padding: 2.5px 10px;
+}
+/* ----------------------- */
+
+/* HEADER */
+#top{
+    width: 100%;
+    height: 100%;
+    background: url(../images/top.jpg) no-repeat center;
+    background-size: cover;
+    text-align: right;
+    overflow: auto;
+}
+#top h1{
+    margin-top: 15%;
+    margin-right: 3%;
+    font-family: 'Vidaloka', serif; 
+    font-size: 3.5em;
+}
+#top h2{
+    margin-top: 1%;
+    margin-right: 3%;
+    font-size: 2em;
+    font-weight: normal;
+}
+/* ---------------------- */
+
+/* OFFER */
+#con_offer{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: rgb(229,255,204);
+    overflow: auto;
+}
+.offer_box{
+    width: 18%;
+    height: 390px;
+    float: left;
+    margin-right: 2.3%;
+    padding: 1% 2.5%;
+    background-color: rgb(253,253,253);
+    border: 1px solid rgb(102,204,0);
+}
+.offer_box:hover{
+    box-shadow: 0 0 10px rgb(76,153,0);
+}
+.offer_box:last-child {
+    margin-right: 0;
+}
+.vip_box{
+    background-color: rgb(102,204,0);
+    border: 1px solid rgb(0,153,0);
+    color: rgb(253,253,253);
+}
+.vip_box:hover{
+    box-shadow: 0 0 10px rgb(0,153,0);
+}
+.offer_time{
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.offer_box ul{
+    height: 215px;
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+.offer_box ul li{
+    padding: 3px 0;
+}
+.offer_price{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#tooltopContainer{
+    position: absolute;
+    left: 0;
+    top:0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255,87,51);
+    color: rgb(255,255,255);
+    opacity: 0;
+}
+
+/* ---------------------- */
+
+/* NUTRITIONISTS */ 
+#con_nutritionists{
+    width: 100%;
+    padding-bottom: 5%;
+    background: url(../images/allFood.jpg) no-repeat center;
+    background-size: cover;
+    overflow: auto; 
+}
+#con_nutritionists .section_header, #con_nutritionists .section_description{
+    color: rgb(250,250,250);
+    text-shadow: 0 0 3px rgb(28,28,28);
+}
+.nutritionist_box{
+    width: 43.5%;
+    height: auto;
+    margin-right: 5%;
+    padding: 2%;
+    float: left;
+    background: rgba(250,250,250,.85);
+}
+.nutritionist_box:last-child{
+    margin-right: 0;    
+}
+.nutritionist_img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.nutritionist_name{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+.presentation{
+    text-align: center;
+}
+.nutritionist h3{
+    font-size: 1.3em;
+}
+.nutritionist p{
+    line-height: 22px;
+}
+.diploma_img{
+    width: 30%;
+    float: left;
+    max-width: 350px;
+    margin-right: 15px;
+    border: 1px solid rgb(192,192,192); 
+}
+/* ---------------------- */
+
+/* LOCATION */
+#con_location{
+    width: 100%;
+    background-color: rgb(229,255,204);
+    overflow: auto;
+}
+#con_location .center_section{
+    padding: 3% 0 .5% 0;
+}
+.map{
+    width: 100%;
+    height: auto;
+}
+.map iframe{
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+/* ---------------------- */
+
+/* CONTACT */
+#con_contact{
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: rgb(229,255,204);
+    overflow: auto;
+}
+.form_box{
+    width: 96.7%;
+    padding: 1.5%;
+    background: rgb(253,253,253);
+    border: 1px solid rgb(102,204,0);
+}
+.form_box input {
+    width: 47.15%;
+    padding: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    border: 1px solid rgb(224,224,224);
+    font-size: 1em;
+}
+.form_box input:nth-of-type(2n){
+    margin-right: 0;
+}
+.form_box input:focus{
+    outline: none;
+    border: 1px solid rgb(192,192,192);
+}
+.form_box input:last-of-type{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 50px;
+}
+/* SELECT */
+.custom-select {
+    width: 49.25%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+}
+.custom-select select {
+    display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(224,224,224);
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    right: 1%;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: rgb(28,28,28) transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgb(28,28,28) transparent;
+    top: 20%;
+}
+.select-items div, .select-selected {
+    padding: 2%;
+    color: rgb(28,28,28);
+    cursor: pointer;
+    user-select: none;
+}
+.select-items div{
+    border: 1px solid transparent;
+    border-color: transparent rgb(224,224,224) rgb(224,224,224) rgb(224,224,224);
+}
+.select-items {
+    position: absolute;
+    background-color: rgb(255,255,255);
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: rgb(224,224,224);
+}
+/* END SELECT */
+#none_selected{
+    display: none;
+}
+.form_box textarea {
+    width: 97.66%;
+    height: 130px;
+    margin-bottom: 1%;
+    padding: 1%;
+    border: 1px solid rgb(224,224,224);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    resize: none;
+}
+.form_box textarea:focus{
+    outline: none;
+    border: 1px solid rgb(192,192,192);
+}
+.submit_form{
+    background-color: rgb(160,160,160);
+    border: 1px solid rgb(128,128,128);
+    color: rgb(245,245,245);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background .5s, border .5s;
+}
+.submit_form:hover{
+    background-color: rgb(128,128,128);
+    border: 1px solid rgb(96,96,96);
+}
+.submit_form:focus{
+    outline: none;
+}
+.failure{
+    margin-top: 10px;
+    padding: 15px 10px;
+    border: 1px solid rgb(255,0,0);
+    background-color: rgb(242,222,222);
+    color: rgb(131,38,28);
+}
+.success{
+    margin-top: 10px;
+    padding: 15px 10px;
+    border: 1px solid rgb(172,213,155);
+    background-color: rgb(223,240,216);
+    color: rgb(57,115,58);
+}
+
+/* ---------------------- */
+
+/* FOOTER */
+#con_footer{
+    width: 100%;
+    background-color: rgb(224,224,224);
+    overflow: auto; 
+}
+.details{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: .8em;
+}
+.autor {
+    display: felx;
+    margin: 0;
+}
+.autor p {
+    margin: 0;
+    padding: 2px 0;
+}
+.photo_info{
+    display: flex;
+    margin: 0 0 0 auto;
+    text-align: right;
+    flex-direction: column;
+}
+.photo_info ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.photo_info li {
+    padding: 2px 0;
+}
+/* ---------------------- */
