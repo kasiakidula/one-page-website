@@ -1,83 +1,77 @@
 @media screen and (max-width: 1050px){
-    .menu_top{
-        width: 80%;
+    .nav-list {
+        width: 550px;
+    }
+    .nav-link {
+        width: 110px;
+        font-size: 1.25em;
     }
     
     /* OFFER */
-    .offer_box{
+    .offer-box{
         width: 43%;
         height: auto;
         margin-bottom: 3%;
     }
-    .offer_box:nth-of-type(2n){
+    .offer-box:nth-of-type(2n){
         margin-right: 0;
     }
     /* ---------------- */
     
      /* NUTRITIONISTS */
-    .diploma_img{
-        width: 40%;
+    .nutritionist-box{
+        width: 80%;
     }
     /* ---------------- */
 }
-
+@media screen and (max-width: 880px){ 
+    /* COMMON VALUE */
+    .section-description{
+        line-height: 25px;
+    }
+    /* ---------------- */
+}
 @media screen and (max-width: 768px){
     /* COMMON VALUE */
-    .center_section{
+    .center-section{
         width: 95%;
     }
-    .section_header{
+    .section-header{
         margin: 3% 0;
         line-height: 45px;
     }
-    .section_description{
+    .section-description{
         line-height: 25px;
     }
     /* --------------- */
     
     /* MENU */
-    #con_menu{
-        margin-top: -195px;
+    nav {
+        flex-direction: column;
+        justify-content: center;
         position: fixed;
+        background-color: rgba(255,255,255, .8);
         box-shadow: 0 0 10px rgb(28,28,28);
+        z-index: 101;
+        overflow: hidden;
     }
-    .menu_top{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        float: none;
-        background-color: rgb(255,255,255);
+    .nav-list{
+        display: none;
         flex-direction: column;
+        width: 100%;
+        padding: 0;
     }
-    #icons{
-        margin: 0;
+    .nav-link {
+        width: 100%;
+        padding: 18px 0;
     }
-    .menu_icon{
+    .logo-img {
+        margin: 5px 20px;
+        width: 60px;
+        height: 65px;
+    }
+    .menu-toggler {
         display: block;
-        margin: 0;
-        padding: 15.5px 20px;
-        font-size: 1.5em;
-        color: rgb(28,28,28);
-    }
-    .menu_icon:hover{
-        background-color: rgb(224,224,224);
-    }
-    .links{
-        width: 100%;
-        padding: 0;
-        font-size: 1em;
-        flex-direction: column;
-    }
-    .links li{
-        width: 100%;
-        float: none;
-        padding: 10px 0;
-    }
-    .img_logo{
-        margin: 0 0 0 auto;
-        width: 48px;
-        height: 55px;
-        padding: 2.5px 10px;    
     }
     /*  --------------------- */
     
@@ -97,63 +91,81 @@
     /* --------------- */
     
     /* OFFER */
-    .offer_box{
+    .offer-box{
         width: 90%;
         height: auto;
         float: none;
         margin-right: 0;
         padding: 0 5%;
     }
-    .offer_box ul{
+    .offer-box:hover {
+        transform: scale(1.02);
+    }
+    .offer-box ul{
         height: auto;
     }
     
     /* --------------- */
     
     /* NUTRITIONISTS */ 
-    .nutritionist_box{
-        width: 96%;
-        margin-right: 0;
-        margin-bottom: 3%;
-        float: none;
-        text-align: center;
+    .nutritionist-box{
+        width: 90%;
     }
-    .diploma_img{
-        display: block;
-        margin: 0 auto;
-        float: none;
+    .nutritionist-box:hover{
+        transform: scale(1.03);
     }
-     /* --------------- */
-    
-     /* CONTACT */
-     .form_box input {
-         width: 93%;
-         padding: 3%;
-         margin-right: 0;
-         margin-bottom: 3%;
-     }
-     .custom-select{
-         width: 99.5%;
-         margin-right: 0;
-         margin-bottom: 3%;
-     }
-     .select-items div, .select-selected {
-         padding: 3%;
-     }
-     .form_box textarea{
-         width: 93%;
-         padding: 3%;
-         margin-bottom: 3%;
-     }
-     /* --------------- */
-     
+     /* --------------- */     
      /* FOOTER */
      .details{
          flex-direction: column;
      }
-     .photo_info{
+     .photo-info{
          margin: 3px 0;
          text-align: left;
      }
 }
-
+    /* ----------------- */
+@media screen and (max-width: 720px) {
+    /* NUTRITIONISTS */ 
+    .nutritionist-box{
+        margin: 0 auto 20px auto;
+        flex-direction: column;
+    }
+    .nutritionist-box:nth-of-type(2n) {
+        margin: 0 auto 20px auto;
+        flex-direction: column;
+    }
+    .presentation {
+    flex-direction: column;
+    }
+    .nutritionist-box:nth-of-type(2n) .presentation{
+        flex-direction: column;
+    }
+    /* ----------------- */
+    }
+@media screen and (max-width: 605px) {
+    /* CONTACT */
+    form {
+        width: 80%;
+    }
+     /* --------------- */
+}
+@media screen and (max-width: 425px) {
+    #top h1{
+        margin-top: 45%;
+    }
+}
+@media screen and (max-width: 375px) {
+    /* CONTACT */
+    form {
+        width: 95%;
+    }
+     /* --------------- */ 
+}
+@media screen and (max-width: 320px) {
+    /* COMMON VALUE */
+    section_header {
+        font-size: 2.2em;
+    }
+     /* ----------------- */
+}
