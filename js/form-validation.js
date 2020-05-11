@@ -76,6 +76,9 @@ $(document).ready(function() {
             $(form)[0].reset();
             let message = "Your message has been sent!";
             $("#response").html(message);
+            if($("#response").hasClass("failure")) {
+                    $("#response").removeClass("failure");
+                }
             $("#response").addClass("success");
             $("#response").show();
             $("#response").delay(10000).fadeOut(300);
@@ -88,7 +91,10 @@ $(document).ready(function() {
                     ? 'You missed 1 field.'
                     : 'You missed ' + errors + ' fields!';
                 $("#response").html(message);
-                $("#response").addClass('failure');
+                if($("#response").hasClass("success")) {
+                    $("#response").removeClass("success");
+                }
+                $("#response").addClass("failure");
                 $("#response").show();
                 $("#response").delay(10000).fadeOut(300);
             }
